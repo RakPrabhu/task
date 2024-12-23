@@ -1,0 +1,92 @@
+/* Basic styles for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  /* Logo styles */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Link styles */
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-links li {
+    display: inline;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #f39c12;
+  }
+  
+  /* Icon styles */
+  .navbar-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-icon:hover {
+    color: #f39c12;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px 20px;
+    }
+  
+    .navbar-logo {
+      font-size: 1.3rem; /* Slightly smaller logo */
+      margin-bottom: 15px; /* Add space below the logo */
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 20px;
+      margin-top: 10px;
+    }
+  
+    .navbar-links li {
+      display: block; /* Stack the links vertically */
+    }
+  
+    .navbar-links a {
+      font-size: 1.1rem; /* Slightly smaller font for links on mobile */
+    }
+  
+    .navbar-icons {
+      justify-content: center;
+      margin-top: 10px; /* Add space between the links and icons */
+    }
+  
+    .navbar-icon {
+      font-size: 1.3rem; /* Adjust icon size for mobile */
+    }
+  }
+  

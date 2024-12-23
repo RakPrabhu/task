@@ -1,0 +1,212 @@
+:root {
+  --primary-bg: #f5e7fc;
+  --primary-color: #262626;
+  --secondary-color: #ffcc00;
+  --font-family: "Arial", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--primary-bg);
+  color: var(--primary-color);
+}
+
+.App {
+  text-align: center;
+}
+
+
+.container {
+  padding: 20px;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+
+.navbar {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+.main-content {
+  margin-top: 20px;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px 0;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-text {
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+.carousel-image {
+  height: 500px; /* Adjust as needed */
+  object-fit: cover;
+}
+
+
+.text-container {
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #fff;
+  margin-top: -1px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.text-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.text-container p {
+  font-size: 2.8rem;
+  color: black;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.view-collection-button {
+  background-color: #555a5e;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-collection-button:hover {
+  background-color: #555a5e;
+}
+
+/* Clothing Cards Styles */
+.clothing-cards-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #555;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .clothing-cards-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for larger tablets */
+    gap: 15px; /* Reduce gap for larger tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .clothing-cards-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    gap: 15px;
+  }
+
+  .text-container h2 {
+    font-size: 2rem; /* Adjust title size */
+  }
+
+  .text-container p {
+    font-size: 2rem; /* Adjust paragraph size */
+  }
+
+  .view-collection-button {
+    font-size: 1rem; /* Smaller button on mobile */
+  }
+
+  .carousel-image {
+    height: 400px; /* Adjust image height on tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .clothing-cards-container {
+    grid-template-columns: 1fr; /* Single column for small screens */
+    gap: 10px; /* Smaller gap for small screens */
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .text-container h2 {
+    font-size: 1.5rem; /* Smaller title for small screens */
+  }
+
+  .text-container p {
+    font-size: 1.5rem; /* Smaller paragraph for small screens */
+  }
+
+  .view-collection-button {
+    font-size: 0.9rem; /* Adjust button size */
+    padding: 12px 25px; /* Adjust button padding */
+  }
+
+  .carousel-image {
+    height: 300px; /* Smaller image height for mobile */
+  }
+}
