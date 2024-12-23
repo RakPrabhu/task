@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/task/static/css/main.eab894ed.css",
+    "main.js": "/task/static/js/main.0686e550.js",
+    "static/js/488.bfdf8054.chunk.js": "/task/static/js/488.bfdf8054.chunk.js",
+    "static/media/formal_man.jpg": "/task/static/media/formal_man.658f218cc2df867943e9.jpg",
+    "static/media/image3.jpg": "/task/static/media/image3.72470f4e4fdb14a861f9.jpg",
+    "static/media/jacket.jpg": "/task/static/media/jacket.78c16cd319acac24051f.jpg",
+    "static/media/formal_women.jpg": "/task/static/media/formal_women.33a50089f5e7dedf501c.jpg",
+    "static/media/image1.jpg": "/task/static/media/image1.814c22927a8f8382b79d.jpg",
+    "static/media/women_casual.jpg": "/task/static/media/women_casual.d774acffe18b881f3e7b.jpg",
+    "index.html": "/task/index.html",
+    "main.eab894ed.css.map": "/task/static/css/main.eab894ed.css.map",
+    "main.0686e550.js.map": "/task/static/js/main.0686e550.js.map",
+    "488.bfdf8054.chunk.js.map": "/task/static/js/488.bfdf8054.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eab894ed.css",
+    "static/js/main.0686e550.js"
+  ]
+}
